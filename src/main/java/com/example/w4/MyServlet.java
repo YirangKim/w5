@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "myServlet", urlPatterns = "/my")
+@WebServlet(name = "myServlet", urlPatterns = "/myy")
 public class MyServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -16,7 +16,7 @@ public class MyServlet extends HttpServlet {
 
         PrintWriter out = resp.getWriter();
         out.println("<html><body>");
-        out.println("<h1>MyServlet</h1>");
+        out.println("<h2>MyServlet</h2>");
         out.println("</body></html>");
         //super.doGet(req, resp);
     }
